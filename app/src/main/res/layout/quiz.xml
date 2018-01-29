@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/theme"
+        android:id="@+id/theme"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/theme"
+    android:id="@+id/lay"
+    android:layout_marginTop="60dp"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:layout_marginRight="20dp"
+        android:text=" "
+        android:textSize="20sp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/answear"
+        android:text=" "
+        android:textSize="20sp"
+        />
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/question"
+        android:layout_below="@id/lay"
+        android:layout_marginTop="30dp"
+        android:text="Pytanie"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/choice1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:background="@color/yellow"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:layout_marginBottom="80dp"/>
+
+    <Button
+        android:id="@+id/choice2"
+        android:layout_above="@id/choice1"
+        android:layout_width="250dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/category_body"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Button1" />
+
+    <Button
+        android:id="@+id/choice3"
+        android:textAllCaps="false"
+        android:layout_above="@id/choice2"
+        android:layout_width="250dp"
+        android:textColor="@color/white"
+        android:background="#000000"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Button"
+        />
+</RelativeLayout>

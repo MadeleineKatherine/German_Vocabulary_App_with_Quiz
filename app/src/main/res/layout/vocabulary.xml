@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.miwok.VocabularyActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/theme"
+            android:layout_marginBottom="5dp"/>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+
+
+            >
+            <!-- Numbers category -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_numbers"
+                android:layout_margin="1dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_looks_one_white_24dp"/>
+                    <TextView
+                        android:id="@+id/numbers"
+                        style="@style/CategoryStyle"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="@string/category_numbers"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Family category -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_family"
+                android:layout_margin="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_people_white_24dp"/>
+                    <TextView
+                        android:id="@+id/family"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="@string/category_family" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Colors category -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_colors"
+                android:layout_margin="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_palette_white_24dp"/>
+                    <TextView
+                        android:id="@+id/colors"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="@string/category_colors" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Phrases category -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_phrases"
+                android:layout_margin="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_textsms_white_24dp"/>
+                    <TextView
+                        android:id="@+id/phrases"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="@string/category_phrases" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_verbs"
+                android:layout_margin="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_directions_bike_white_24dp"/>
+                    <TextView
+                        android:id="@+id/verbs"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="Verbs" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_city"
+                android:layout_margin="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_traffic_white_24dp"/>
+                    <TextView
+                        android:id="@+id/city"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="City" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_food"
+                android:layout_margin="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_restaurant_white_24dp"/>
+                    <TextView
+                        android:id="@+id/food"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="Food" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_body"
+                android:layout_margin="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_accessibility_white_24dp"/>
+                    <TextView
+                        android:id="@+id/body"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="Body" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_home"
+                android:layout_margin="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_home_white_24dp"/>
+                    <TextView
+                        android:id="@+id/home"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="House">
+
+                    </TextView>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_travels"
+                android:layout_margin="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_airplanemode_active_white_24dp"/>
+                    <TextView
+                        android:id="@+id/travels"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="Travels" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_shop"
+                android:layout_margin="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_shopping_cart_white_24dp"/>
+                    <TextView
+                        android:id="@+id/shop"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="Shopping" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_time"
+                android:layout_margin="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_alarm_white_24dp"/>
+                    <TextView
+                        android:id="@+id/time"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="Time" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_school"
+                android:layout_margin="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_local_library_white_24dp"/>
+                    <TextView
+                        android:id="@+id/school"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="School" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnWeight="1"
+                android:background="@color/category_sport"
+                android:layout_margin="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/ic_pool_white_24dp"/>
+                    <TextView
+                        android:id="@+id/sport"
+                        style="@style/CategoryStyle"
+                        android:gravity="center"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="Sport" />
+                </LinearLayout>
+            </FrameLayout>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
+
